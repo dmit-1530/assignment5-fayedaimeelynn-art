@@ -108,3 +108,16 @@ p {
     margin-top: 1.5rem;
 }
 
+/* media queries */
+@media screen and (min-width: 48.75rem) {
+    .toggle {
+        display: none;
+    }
+
+    header nav {
+        position: static;
+        width: auto;
+        max-height: unset;
+        overflow: visible;
+        padding-bottom: 0;
+    }
