@@ -121,3 +121,70 @@ p {
         overflow: visible;
         padding-bottom: 0;
     }
+
+    .menu li:first-of-type {
+        border-top: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu li {
+        border: none;
+        line-height: 3.5rem;
+    }
+
+    .menu li a {
+        padding: 0 .5rem;
+        border-radius: .3125rem;
+    }
+
+    .menu a:hover,
+    .menu a:active {
+        background-color: #A258A9;
+    }
+
+    .cta:hover {
+        background-color: #793880;
+    }
+
+    .hero {
+        max-width: 30.5rem;
+    }
+}
+
+@media screen and (min-width: 64.8125rem) {
+    header .inner-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .flex-container {
+        display: contents;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    header nav {
+        order: 2;
+        flex: 1;
+        padding: 0 1rem;
+    }
+
+    .cart {
+        order: 3;
+    }
+}
+
+@media screen and (min-width: 120rem) {
+    .inner-container {
+        max-width: 113.75rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
