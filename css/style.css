@@ -10,6 +10,7 @@ body {
     align-items: center;
 }
 
+/* header & toggle */
 header {
     background-color: #9846A0;
     padding: 1rem;
@@ -26,6 +27,15 @@ header {
     flex-direction: column;
     align-items: center;
     padding-bottom: .2775rem;
+    order: 1;
+}
+
+.logo {
+    order: 2;
+}
+
+.cart {
+    order: 3;
 }
 
 .toggle span {
@@ -50,10 +60,6 @@ header {
     border-top: .0625rem solid #fff;
 }
 
-.menu li:last-of-type {
-
-}
-
 header nav {
     position: absolute;
     top: 4.9375rem;
@@ -63,21 +69,22 @@ header nav {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.7s ease-in-out;
-    padding: 0 1rem ;
-    padding-bottom: 2.5rem;
+    padding: 0 1rem;
 }
 
 .show-nav {
     max-height: 100vh;
+    padding-bottom: 2.5rem;
 }
 
+/* main  */
 .hero {
     padding: 2rem 1rem;
 }
 
 h1 {
     font-size: 2rem;
-
+    font-weight: 400;
 }
 
 h1 span {
@@ -87,7 +94,9 @@ h1 span {
 
 p {
     font-size: 1rem;
+    font-weight: 400;
     margin: 1.5rem 0 2.5rem 0;
+    line-height: 1.5;
 }
 
 .cta {
@@ -98,3 +107,4 @@ p {
     color: #fff;
     margin-top: 1.5rem;
 }
+
